@@ -174,7 +174,7 @@ body, html
 }
 .header
 {
-    background: #ccc;
+    background: #f4f4f4;
 }
 
 .header__content
@@ -254,7 +254,7 @@ body, html
 }
 
 .top{
-    background-image: url(../img/09901458028eb50dfec105c5a05662d8.png);
+    background-image: url(../img/1505920898_original.gif);
     background-repeat: no-repeat;
     background-position: top center;
 	position: relative;
@@ -268,21 +268,33 @@ body, html
 }
 
 .main__tittle_1{
-	font-size: 30px;
-	margin-top: 60px;
-	padding-top: 100px;
+	display: inline-block;
+	font-weight: bold;
 }
 .main__content{
+	text-align: center;
 	padding-top: 100px;
 	margin-top: 0px;
-	font-size: 25px;
+	opacity: 0;
+	transition: opacity .5s
 }
 .main__text{
+	text-align: left;
+	font-family: CorsicaRamblerLX, Roboto, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 25px;
 	border-left-style: solid;
   	margin-left: -5px;
   	padding-right: 250px;
-	margin-top: 30px;
+	margin-top: 70px;
 	margin-right: 300px;
+}
+.op{
+	opacity: 100;
+}
+
+h2{
+	font-size: 50px;
 }
 
 .audio_top{
@@ -328,4 +340,8 @@ body, html
   
 .text__button {
 	color: #f4f4f4;
+}
+
+.green__text {
+	color: #3affc7;
 }
