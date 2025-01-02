@@ -163,18 +163,54 @@ body, html
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: arial;
     font-size: 16px;
 }
 
 .wrapper
 {
     width: 100%;
-	
+	position: relative;
 }
 .header
 {
-    background: #f4f4f4;
+    background: #ccc;
+}
+
+body
+{
+    background: #111;
+    color: #f4f4f4;
+    
+}
+.header{
+    background: #000000;
+}
+
+.header__content
+{
+    background: #000000;
+    color: #f4f4f4;
+}
+
+.nav__item:hover, .nav__item_active
+{
+    background: #000000;
+}
+
+.theme-button
+{
+    color: #f4f4f4;
+    background: #4f7faf;
+}
+
+.theme-button:hover
+{
+    background: #6f9fcf;
+}
+
+.button__top {
+    background-color: #373737;
+	color: white;
 }
 
 .header__content
@@ -191,17 +227,18 @@ body, html
     margin-top: 100px;
     padding: 15px 140px;
     margin: 10px;
+	font-size: 15px;
     cursor: pointer;
     text-decoration: 0.4s;
 	border: 2px solid #141414;
-	background-color: #bc13fe;
+	background-color: #ba62dd;
 	color: black;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	font-family: "Pixelify Sans", sans-serif;
 }
 
 .button__top:hover{
-	background-color: #04AA6D; /* Green */
+	border-color: white;
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -264,20 +301,39 @@ body, html
 }
 
 .main {
-	background-image: url(../img/glitch-effect-black-background.jpg);
+	background-image: url(../img/unnamed.png);
+	background-repeat: repeat-y;
+	background-size: cover;
+	display: block;
+	background-attachment: fixed;
 }
 
-.main__tittle_1{
+.lain__pic{
+	position: inherit;
+	margin-top: -700px;
+	margin-left: 725px;
+}
+
+.main__tittle__1{
 	display: inline-block;
 	font-weight: bold;
 }
+
 .main__content{
+	position: relative;
 	text-align: center;
 	padding-top: 100px;
-	margin-top: 0px;
-	opacity: 0;
-	transition: opacity .5s
 }
+
+.wow {
+	opacity: 0;
+	transition: all 1.0s 1.0s ease-out;
+  }
+
+.animated {
+	opacity: 1;
+}
+  
 .main__text{
 	text-align: left;
 	font-family: CorsicaRamblerLX, Roboto, Helvetica, Arial, sans-serif;
@@ -289,9 +345,7 @@ body, html
 	margin-top: 70px;
 	margin-right: 300px;
 }
-.op{
-	opacity: 100;
-}
+
 
 h2{
 	font-size: 50px;
@@ -344,4 +398,62 @@ h2{
 
 .green__text {
 	color: #3affc7;
+}
+
+.list__hack{
+	text-align: center;
+	position: relative;
+	transition: opacity .5s
+}
+
+
+.main__tittle__2{
+	padding-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.main__text__1{
+	font-family: CorsicaRamblerLX, Roboto, Helvetica, Arial, sans-serif;
+	margin-top: 100px;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: right;
+}
+
+.masson__pic{
+	position: inherit;
+	margin-top: -500px;
+	margin-left: 150px;
+
+}
+.font__list{
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.banknot__pic{
+	position: absolute;
+	margin-top: -365px;
+	margin-left: -100px;
+}
+
+.main__text__2{
+	text-align: left;
+	font-family: CorsicaRamblerLX, Roboto, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	border-left-style: solid;
+  	margin-left: -5px;
+  	padding-right: 250px;
+	margin-top: 70px;
+	margin-right: 300px;
+}
+
+.Green__Dragon__pic{
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	top: 1000px;
+	left: 900px;
 }
