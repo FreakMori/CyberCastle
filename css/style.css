@@ -230,8 +230,8 @@ body
 	font-size: 15px;
     cursor: pointer;
     text-decoration: 0.4s;
-	border: 2px solid #141414;
-	background-color: #ba62dd;
+	border: 2px solid #67025e9e;
+	background-color: #c262dd82;
 	color: black;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	font-family: "Pixelify Sans", sans-serif;
@@ -327,7 +327,7 @@ body
 
 .wow {
 	opacity: 0;
-	transition: all 1.0s 1.0s ease-out;
+	transition: all .5s .5s ease-out;
   }
 
 .animated {
@@ -456,4 +456,28 @@ h2{
 	position: absolute;
 	top: 1000px;
 	left: 900px;
+}
+
+.DDos__map{
+	margin-left: 600px;
+	margin-top: -300px;
+}
+
+.Hacker__death{
+	width: 450px;
+	height: 240px;
+	margin-right: 700px;
+	margin-top: -370px;
+}
+
+.imagina .hoverimg1{
+	display: none;
+}
+
+.imagina:hover .img1{
+	display: none;
+}
+
+.imagina:hover .hoverimg1{
+	display:block;
 }
