@@ -1,23 +1,16 @@
-
-
 body
 {
     background: #111;
     color: #f4f4f4;
     
 }
-
-.main
-{
-    background: #111;
-    color: #f4f4f4;
+.header{
+    background: #000000;
 }
-
-
 
 .header__content
 {
-    background: #141414;
+    background: #000000;
     color: #f4f4f4;
 }
 
