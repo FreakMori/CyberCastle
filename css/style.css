@@ -310,8 +310,8 @@ body
 
 .lain__pic{
 	position: inherit;
-	margin-top: -700px;
-	margin-left: 725px;
+	margin-top: 0px;
+	margin-left: 0px;
 }
 
 .main__tittle__1{
@@ -424,8 +424,8 @@ h2{
 
 .masson__pic{
 	position: inherit;
-	margin-top: -500px;
-	margin-left: 150px;
+	margin-top: 0px;
+	margin-left: 0px;
 
 }
 .font__list{
@@ -435,7 +435,7 @@ h2{
 .banknot__pic{
 	position: absolute;
 	margin-top: -365px;
-	margin-left: -100px;
+	margin-left: 500px;
 }
 
 .main__text__2{
@@ -458,16 +458,11 @@ h2{
 	left: 900px;
 }
 
-.DDos__map{
-	margin-left: 600px;
-	margin-top: -300px;
-}
+
 
 .Hacker__death{
 	width: 450px;
 	height: 240px;
-	margin-right: 700px;
-	margin-top: -370px;
 }
 
 .imagina .hoverimg1{
@@ -480,4 +475,71 @@ h2{
 
 .imagina:hover .hoverimg1{
 	display:block;
+}
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.card {
+	width: 190px;
+	height: 254px;
+	margin: 0 auto;
+	background-color: #000000;
+	border: 1px solid white;
+	border-radius: 0px;
+	z-index: 1;
+  }
+  
+  .tools {
+	display: flex;
+	align-items: center;
+	padding: 9px;
+  }
+  
+  .circle {
+	padding: 0 4px;
+  }
+  
+  .box {
+	display: inline-block;
+	align-items: center;
+	width: 10px;
+	height: 10px;
+	padding: 1px;
+	border-radius: 50%;
+  }
+  
+  .red {
+	background-color: #ff605c;
+  }
+  
+  .yellow {
+	background-color: #ffbd44;
+  }
+  
+  .green {
+	background-color: #00ca4e;
+  }
+
+.card__1{
+	margin-left: 570px;
+	margin-top: -500px;
+}
+
+.card__2{
+	margin-right: 650px;
+	margin-top: -350px;
+}
+
+.card__3{
+	margin-left: 600px;
+	margin-top: -300px;
+}
+
+.card__4{
+	margin-right: 680px;
+	margin-top: -250px;
+}
+
+.card__5{
+	margin-left: 130px;
+	margin-top: -300px;
 }
