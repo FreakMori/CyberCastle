@@ -559,3 +559,26 @@ h2{
 	margin-top: -80px;
 	position: relative;
 }
+
+.Part__2 {
+	margin-top: 170px;
+	font-family: "Pixelify Sans", sans-serif;
+	background-color: #000000;
+}
+
+.Part__2__content{
+	font-size: 80px;
+}
+.span__1{
+	font-size: 30px;
+}
+
+
+
+.main__cybercrime{
+	background-image: url(../img/16626574851490.jpg);
+	background-repeat: repeat-y;
+	background-size: cover;
+	display: block;
+	background-attachment: fixed;
+}
