@@ -572,11 +572,18 @@ h2{
 .span__1{
 	font-size: 30px;
 }
-
+.card__9{
+	margin-left: 700px;
+	margin-top: -270px;
+}
+.card__10{
+	margin-right: 700px;
+	margin-top: -320px;
+}
 
 
 .main__cybercrime{
-	background-image: url(../img/16626574851490.jpg);
+	background-image: url(../img/unnamed.png);
 	background-repeat: repeat-y;
 	background-size: cover;
 	display: block;
