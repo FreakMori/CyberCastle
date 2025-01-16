@@ -589,3 +589,37 @@ h2{
 	display: block;
 	background-attachment: fixed;
 }
+
+.jersey-15-regular {
+	font-family: "Jersey 15", serif;
+	font-weight: 400;
+	font-style: normal;
+}  
+
+.hack__operation{
+	margin-left: 150px;
+	font-size: 23px;
+	margin-right: 550px;
+	margin-bottom: 40px;
+}
+
+.geologica {
+  font-family: "Geologica", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+
+.li__hack{
+	font-family:"Dela Gothic One", serif;
+}
+
+.dela-gothic-one-regular {
+	font-family: "Dela Gothic One", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
