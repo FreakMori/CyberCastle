@@ -588,13 +588,8 @@ h2{
 	background-size: cover;
 	display: block;
 	background-attachment: fixed;
+	font-family: 'CorsicaRamblerLX', 'Roboto', Helvetica, Arial, sans-serif;
 }
-
-.jersey-15-regular {
-	font-family: "Jersey 15", serif;
-	font-weight: 400;
-	font-style: normal;
-}  
 
 .hack__operation{
 	margin-left: 150px;
@@ -603,23 +598,23 @@ h2{
 	margin-bottom: 40px;
 }
 
-.geologica {
-  font-family: "Geologica", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0,
-    "SHRP" 0;
+.li__FF{
+	font-family: 'CorsicaRamblerLX', 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-.li__hack{
-	font-family:"Dela Gothic One", serif;
+
+.card__11{
+	margin-left: 780px;
+	margin-top: -470px;
 }
 
-.dela-gothic-one-regular {
-	font-family: "Dela Gothic One", serif;
-	font-weight: 400;
-	font-style: normal;
-  }
-  
+.lenta__img{
+	width: 250px;
+	height: 80px;
+	margin-left: 1150px;
+	position: absolute;
+	margin-top: -650px;
+	margin-right: 0px;
+	transform: rotate(45deg);
+}
+
