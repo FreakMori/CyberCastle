@@ -33,3 +33,4 @@ function Save(theme)
     Request.open("GET", "/js/themes.php?theme=" + theme, true); //У вас путь может отличаться
     Request.send();
 }
+
