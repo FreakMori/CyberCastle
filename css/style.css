@@ -623,8 +623,14 @@ h2{
 	margin-top: -350px;
 }
 
-@media (max-width: 1080) {
-	html {
-		transform: scale(2);
+@media (max-width: 1921) {
+	body{
+		zoom:1.25;
+	}
+}
+
+@media (max-width: 2561) {
+	body{
+		zoom: 1.75;
 	}
 }
