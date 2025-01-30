@@ -598,9 +598,6 @@ h2{
 	margin-bottom: 40px;
 }
 
-.li__FF{
-	font-family: 'CorsicaRamblerLX', 'Roboto', Helvetica, Arial, sans-serif;
-}
 
 
 .card__11{
@@ -623,8 +620,34 @@ h2{
 	margin-top: -350px;
 }
 
-@media (max-width: 1080) {
-	html {
-		transform: scale(2);
+.triodion-regular {
+	font-family: "Triodion", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+.play-regular {
+	font-family: "Play", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+.play-bold {
+	font-family: "Play", serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+
+@media (max-width: 1921) {
+	body{
+		zoom:1.25;
 	}
 }
+
+@media (max-width: 2561) {
+	body{
+		zoom: 1.75;
+	}
+}
+
