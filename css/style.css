@@ -637,11 +637,86 @@ h2{
 	font-weight: 700;
 	font-style: normal;
   }
+
+/* Основные стили для футера */
+.site-footer {
+	background-color: #000000;
+	color: #fff;
+	padding: 40px 0;
+	font-family: "Pixelify Sans", sans-serif;
+  }
   
+  .footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .footer-section {
+	margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #fff;
+  }
+  
+  .footer-section ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .footer-section ul li {
+	margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+	color: #ccc;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+	color: #fff;
+  }
+  
+  /* Стили для социальных иконок */
+  .social-links {
+	text-align: center;
+  }
+  
+  .social-icon {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 10px;
+	transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+	color: #0077b5; /* Цвет для LinkedIn, можно изменить */
+  }
+  
+  /* Стили для нижней части футера */
+  .footer-bottom {
+	text-align: center;
+	padding-top: 20px;
+	border-top: 1px solid #444;
+	margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+	margin: 0;
+	font-size: 14px;
+	color: #ccc;
+  }
 
 @media (max-width: 1921) {
 	body{
-		zoom:1.25;
+		zoom:1.35;
 	}
 }
 
