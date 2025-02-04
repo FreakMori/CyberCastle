@@ -714,15 +714,4 @@ h2{
 	color: #ccc;
   }
 
-@media (max-width: 1921) {
-	body{
-		zoom:1.35;
-	}
-}
-
-@media (max-width: 2561) {
-	body{
-		zoom: 1.75;
-	}
-}
 
