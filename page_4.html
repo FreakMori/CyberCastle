@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Роадмап по кибербезопасности на React</title>
+  
+  <!-- Подключаем React и ReactDOM через CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  
+  <!-- Подключаем Babel для трансляции JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- Стили для оформления -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/page__2.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Pixelify+Sans:wght@700&family=Rubik+Pixels&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jersey+15&display=swap" 	rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Triodion&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+<div class="wrapper">
+    <!--<div class="theme-button" id="theme-button">Change theme</div>
+    <header class="header"> -->
+        <div class="header__content">
+        <button class="song_play" id="ASong" onClick="playPause()">
+            <audio
+              src="img/FOREVERT_-_A_Scanner_Darkly_(Zvyki.com).mp3"
+              autoplay
+              loop
+            ></audio>
+            <span class="text__button">fsociety</span>
+          </button>
+            <h1 class="title__top">EVERYONE IS ALWAYS CONNECTED</h1>
+            <nav class="nav">
+                <div class="nav__content">
+                    <a href="index.html"><button href="index.html" class="button__top">>Home</button></a>
+                        <a href="page_2.html"><button href="page_2.html" class="button__top">>Map</button></a>
+                        <a href="page_4.html"><button href="page_4.html" class="button__top">>Roadmap</button></a>
+                        <a href="page3.html"><button href="page3.html" class="button__top">>FAQ</button></a>
+                </div>
+            </nav>
+        </div> 
+        <style>
+    body{
+        background-image: url(img/unnamed.png);
+        background-repeat: repeat-y;
+	    background-size: cover;
+	    display: block;
+	    background-attachment: fixed;
+    }        
+        
+    .roadmap {
+      position: relative;
+      max-width: 1200px;
+      height: 1000px;
+      margin: 0 auto;
+    }
+    .step {
+      width: 140px;
+      padding: 15px;
+      background: linear-gradient(135deg, #000000, #000000);
+      color: white;
+      border: 1px solid;
+      border-color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Pixelify Sans", sans-serif;;
+      position: absolute;
+    }
+    .step a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: white;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+    .connector {
+      stroke: #ffffff;
+      stroke-width: 3;
+      fill: none;
+    }
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Контейнер для React-приложения -->
+  <div id="root"></div>
+  
+  <!-- React-компонент, написанный с использованием JSX -->
+  <script type="text/babel">
+    function Roadmap() {
+      const steps = [
+        { id: 1, title: "Основы сетей", x: 300, y: 300, link: "https://roadmap.sh/cyber-security" },
+        { id: 2, title: "Выбор ОС", x: 300, y: 500, link: "https://ru.wikipedia.org/wiki/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0" },
+        { id: 3, title: "Windows", x: 50, y: 445, link: "#https://ru.wikipedia.org/wiki/Windows" },
+        { id: 4, title: "Linux", x: 50, y: 500, link: "https://ru.wikipedia.org/wiki/Linux" },
+        { id: 5, title: "MacOS", x: 50, y: 555, link: "https://ru.wikipedia.org/wiki/MacOS" },
+        { id: 6, title: "Сетевые знания", x: 300, y: 500, link: "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82" },
+        { id: 7, title: "DNS", x: 550, y: 500, link: "https://ru.wikipedia.org/wiki/DNS" },
+        { id: 7, title: "NTP", x: 550, y: 555, link: "https://ru.wikipedia.org/wiki/NTP" },
+        { id: 7, title: "IPAM", x: 550, y: 610, link: "https://habr.com/ru/companies/microsoft/articles/250653/" },
+        { id: 7, title: "DHCP", x: 550, y: 445, link: "https://ru.wikipedia.org/wiki/DHCP" },
+        { id: 8, title: "SSH", x: 720, y: 500, link: "https://ru.wikipedia.org/wiki/SSH" },
+        { id: 7, title: "FTP", x: 720, y: 555, link: "https://ru.wikipedia.org/wiki/FTP" },
+        { id: 7, title: "HTTPS", x: 720, y: 610, link: "https://ru.wikipedia.org/wiki/HTTPS" },
+        { id: 7, title: "SSL/TLS", x: 720, y: 445, link: "https://ru.wikipedia.org/wiki/SSL" },
+      ];
+      
+      const connectors = [
+        { from: 1, to: 2 }, { from: 2, to: 3 },
+        { from: 2, to: 4}, {from: 2, to: 5},
+        {from: 2, to: 6}, {from: 6, to: 7},
+        {from: 7, to: 8},
+      ];
+      
+      return (
+        <div className="roadmap">
+          <svg width="1200" height="400">
+            {connectors.map((conn, index) => {
+              const from = steps.find(s => s.id === conn.from);
+              const to = steps.find(s => s.id === conn.to);
+              if (!from || !to) return null;
+              const x1 = from.x + 70, y1 = from.y + 20;
+              const x2 = to.x + 70, y2 = to.y + 20;
+              return (
+                <path
+                  key={index}
+                  d={`M${x1},${y1} C${x1 + 50},${y1} ${x2 - 50},${y2} ${x2},${y2}`}
+                  className="connector"
+                />
+              );
+            })}
+          </svg>
+          {steps.map(step => (
+            <a key={step.id} href={step.link} target="_blank" className="step" style={{ left: step.x, top: step.y }}>
+              {step.title}
+            </a>
+          ))}
+        </div>
+      );
+    }
+    
+    ReactDOM.createRoot(document.getElementById('root')).render(<Roadmap />);
+  </script>
+  <script type="text/javascript" src="js/text.js"></script>
+  <script type="text/javascript" src="js/themes.js"></script>
+  <script type="text/javascript" src="js/audio.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
+        </body>
+        </html>
+        
