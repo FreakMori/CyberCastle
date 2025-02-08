@@ -714,4 +714,8 @@ h2{
 	color: #ccc;
   }
 
-
+@media (min-height: 1080px){
+	body{
+		zoom: 1.35
+	}
+}
