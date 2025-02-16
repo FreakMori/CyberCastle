@@ -24,6 +24,7 @@ body {
 		background-color var(--trans-dur),
 		color var(--trans-dur);
 	background: -moz-radial-gradient(center, ellipse cover,  #2989d8 0%, #1e5799 100%, #1e5799 100%);
+	margin-right: -30px;
 
 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#1e5799',GradientType=1 );
@@ -714,8 +715,3 @@ h2{
 	color: #ccc;
   }
 
-@media (min-height: 1080px){
-	body{
-		zoom: 1.35
-	}
-}

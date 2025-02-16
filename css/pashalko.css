@@ -1,0 +1,48 @@
+.top__2{
+    background-image: url(../img/cherri-blossom-anime-5.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+	position: relative;
+    background-size: cover;
+    height: 700px;
+    display: block;
+}
+
+.header__2{
+    background: #e41dd4;
+}
+
+.header__content__2
+{
+    background: #ff61fc;
+    color: #f4f4f4;
+}
+.header__content__2
+{
+    padding: 5px;
+}
+
+.nav__content{
+	display: flex;
+  	justify-content: center;
+}
+.button__top__2{
+	display: inline-block;
+    margin-top: 100px;
+    padding: 15px 140px;
+    margin: 10px;
+	font-size: 15px;
+    cursor: pointer;
+    text-decoration: 0.4s;
+	border: 2px solid #67025e9e;
+	background-color: #fefdfe82;
+	color: black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-family: "Pixelify Sans", sans-serif;
+}
+
+.button__top__2:hover{
+	border-color: white;
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

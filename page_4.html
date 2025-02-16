@@ -81,6 +81,7 @@
       max-width: 1200px;
       height: 1000px;
       margin: 0 auto;
+      margin-top: -900px;
     }
     .step {
       width: 140px;
@@ -117,9 +118,41 @@
       pointer-events: none;
       z-index: -1;
     }
+    .wrapper__1{
+      height: 100vh;
+      margin-left: 135px;
+      margin-top: 50px;
+    }
+
+    .typing-demo{
+      width: 7.5ch;
+      animation: typing 2s steps(7), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: 'Pixelify Sans', sans-serif;
+      font-size: 5em;
+    }
+
+    @keyframes typing{
+      from{
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50%{
+        border-color: transparent;
+      }
+    }
   </style>
 </head>
 <body>
+      <div class="wrapper__1">
+        <div class="typing-demo">
+          Roadmap
+        </div>
+      </div>
   <!-- Контейнер для React-приложения -->
   <div id="root"></div>
   
@@ -186,6 +219,9 @@
   <script>
       new WOW().init();
   </script>
+  <script>
+		document.body.style.zoom = "1.35";
+	</script>
         </body>
         </html>
         
